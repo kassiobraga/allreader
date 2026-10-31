@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="AllReader">
-  <!-- PROVISORIO. Pixel art All.Q (modulo 16, visivel 15, gap 1). Fundo vermelho pedido pelo Kassio. Substituir pelo logo oficial. -->
+  <!-- Pixel art All.Q (modulo 16, visivel 15, gap 1). Fundo vermelho pedido pelo Kassio. -->
   <rect width="256" height="256" fill="#C0261B"/>
   <rect x="64" y="32" width="15" height="15" fill="#FFFFFF"/>
   <rect x="80" y="32" width="15" height="15" fill="#FFFFFF"/>
