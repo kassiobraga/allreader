@@ -34,7 +34,6 @@ mod apple_events;
 mod logging;
 mod single_instance;
 mod text_scale;
-mod updates;
 #[cfg(test)]
 #[path = "windows_manifest.rs"]
 mod windows_manifest;
@@ -256,7 +255,7 @@ fn retry_with_gl(choice: RendererChoice, app_started: bool) -> bool {
 /// The window and renderer settings for one run.
 fn native_options(integrated: bool, renderer: eframe::Renderer) -> eframe::NativeOptions {
     let mut viewport = egui::ViewportBuilder::default()
-        .with_title("PdfCraft")
+        .with_title("AllReader")
         .with_inner_size([1440.0, 920.0])
         .with_min_inner_size([820.0, 520.0])
         .with_drag_and_drop(true)
@@ -304,7 +303,6 @@ fn app_creator<'a>(
         }
         app.integrated_titlebar = integrated;
         app.system_text_scale = text_scale::system();
-        app.update_source = Some(std::sync::Arc::new(updates::latest_release));
         app.os_key_store_ids = cfg!(any(target_os = "macos", target_os = "windows"));
         #[cfg(target_os = "macos")]
         {
@@ -368,7 +366,7 @@ fn app_creator<'a>(
 /// `unsafe` calls.
 fn notify_software_renderer(app: &mut PdfCraftApp, device_type: eframe::wgpu::DeviceType) {
     if device_type == eframe::wgpu::DeviceType::Cpu {
-        app.notify_tr("PdfCraft is drawing without a graphics processor, so it may be slow. Updating the graphics driver may help.");
+        app.notify_tr("AllReader is drawing without a graphics processor, so it may be slow. Updating the graphics driver may help.");
     }
 }
 
