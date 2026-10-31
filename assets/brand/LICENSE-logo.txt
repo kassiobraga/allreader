@@ -1,0 +1,15 @@
+AllReader logo lockups (allreader-logo.svg and allreader-logo-white.svg).
+SPDX-License-Identifier: OFL-1.1 AND (MIT OR Apache-2.0)
+
+The wordmark "All.Reader" is set in DM Sans ExtraBold and converted to outlines.
+Its glyph shapes derive from DM Sans, Copyright 2014 The DM Sans Project Authors
+(https://github.com/googlefonts/dm-fonts), licensed under the SIL Open Font
+License, Version 1.1. The full text is assets/brand/OFL-DMSans.txt. The font
+file itself is not included in this repository (AGENTS.md section 1.4).
+
+The pixel icon, colours and composition are original work by All.Q Agencia
+(Kassio Braga). Copyright (c) 2026 All.Q Agencia. Licensed under either the MIT
+License or the Apache License, Version 2.0, at your option. Full texts are
+LICENSE-MIT and LICENSE-APACHE at the repository root.
+
+Every asset and its SHA-256 is recorded in ATTRIBUTION.toml.
